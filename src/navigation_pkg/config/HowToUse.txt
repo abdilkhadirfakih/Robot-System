@@ -1,0 +1,1 @@
+This folder holds your .yaml files. Hardcoding variables (like max speed, robot radius, or frame names) directly into C++ code is a bad practice because every time you want to tune the robot, you have to recompile the entire C++ package.

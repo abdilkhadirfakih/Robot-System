@@ -1,0 +1,1 @@
+This folder holds .rviz configuration files. Remember how you had to manually click "Add", select the /map topic, add the Costmaps, and change the color scheme from "map" to "costmap" to see the gradients?

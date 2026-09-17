@@ -1,0 +1,29 @@
+{
+  "name": "ROS 2 Jazzy Dual-Stack Workspace",
+  "build": {
+    "dockerfile": "Dockerfile",
+    "context": ".."
+  },
+  "workspaceFolder": "/workspaces/${localWorkspaceFolderBasename}",
+  "workspaceMount": "source=${localWorkspaceFolder},target=/workspaces/${localWorkspaceFolderBasename},type=bind",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "ms-iot.vscode-ros",
+        "ms-python.python",
+        "ms-vscode.cpptools",
+        "twxs.cmake"
+      ],
+      "settings": {
+        "python.defaultInterpreterPath": "/usr/bin/python3",
+        "ros.distro": "jazzy"
+      }
+    }
+  },
+  "remoteUser": "rosuser",
+  "postCreateCommand": "sudo rosdep update && sudo rosdep install --from-paths src --ignore-src -r -y",
+  "runArgs": [
+    "--network=host",
+    "--privileged"
+  ]
+}

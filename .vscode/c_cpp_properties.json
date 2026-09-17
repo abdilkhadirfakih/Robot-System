@@ -1,0 +1,21 @@
+{
+    "configurations": [
+        {
+            "name": "Linux",
+            "includePath": [
+                "${workspaceFolder}/**",
+                "/opt/ros/jazzy/include/**",
+                "/opt/ros/jazzy/include/nav_msgs",
+                "/opt/ros/jazzy/include/std_msgs"
+            ],
+            "compilerPath": "/usr/bin/gcc",
+            "cStandard": "c17",
+            "cppStandard": "gnu++17",
+            "intelliSenseMode": "linux-gcc-x64",
+            "compileCommands": [
+                "${workspaceFolder}/build/master_ros2_pkg/compile_commands.json"
+            ]
+        }
+    ],
+    "version": 4
+}

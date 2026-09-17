@@ -1,0 +1,15 @@
+# Python environment
+.venv/
+
+# ROS2 build files
+build/
+install/
+log/
+
+# Python cache
+__pycache__/
+*.pyc
+
+# ROS2 generated files
+*.egg-info/
+.vscode/browse.vc.db
